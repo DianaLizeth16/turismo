@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>INICIO</title>
+	<style type="text/css">
+#menu nav {
+	margin:8px auto;
+	width:95%;
+	/*max-width:55000px;*/
+}
+#menu nav ul{
+	list-style: none;
+}
+
+#menu nav > ul{
+	display:table;
+	overflow:hidden;
+	width:100%;
+	background:rgb(42, 52, 73);
+	position:relative;
+}
+
+#menu nav >ul li{
+	display:table-cell;
+}
+#menu nav > ul > li:hover > ul{
+	display:block;
+	height:100%;
+}
+#menu nav >ul > li > ul{
+	display: block;
+	position:absolute;
+	background: rgb(35,75,205);
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+/*#menu nav >ul > li > ul{
+	display:none;
+}*/
+#menu nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position:relative;
+	text-align:center;
+	text-decoration: none;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+#menu nav > ul > li > ul > li a:hover{
+	background:rgb(5,76,158);
+}
+
+#menu nav >ul >li > a span{
+	background:rgb(109, 35, 205);
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#menu nav >ul >li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+#menu nav > ul >li > a:hover > span {
+	top:0;
+}
+#menu nav ul li a .primero{
+	background:#C51832;
+}
+#menu nav >ul > li img{
+	height:50px;
+	width:50px;		
+}
+.slider{
+width: 95%;
+margin:auto;
+overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding:0;
+  width: 300%;
+  animation: cambio 15s infinite;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider img{
+  width: 70%
+}
+@keyframes cambio{
+  0%{margin-left: 10}
+  15%{margin-left: 10}
+
+  25%{margin-left:-100%;}
+  45%{margin-left:-100%;}
+}
+.texto{
+	color:white;
+	text-shadow:2px 2px 5px red;
+	text-align: center;
+	font-family: Verdana;
+}
+
+
+.footer{
+		background:rgb(42, 52,73);;
+		text-align: center;
+		padding:40px;
+		color:white;		
+		font-size:12px;
+		font-family:book Antiqua;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<body background="imagenes/fondo2.jpg">
+	
+<div class id="menu">
+<header>
+		<nav>
+			<ul>
+				<li><a href="#"><span class=""><i class="material-icons">list</i></span>Menu</a>
+				<ul>
+						<li><a href="">Buscar Lugares</a></li>
+						<li><a href="">Reseñas</a></li>
+					</ul>
+					</li>
+
+				<li><a href="#"><span class="primero"><i class="material-icons">account_balance</i></span>Guadalajara Lugares</a> 
+				</li>
+				<li><a href="#"><span class=""><i class="material-icons">perm_identity</i></span>Usuario</a>
+					<ul>
+						<li><a href="">Salir</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+	</header>
+</div>
+<div class="slider">
+    <ul>
+      <li><img src="https://www.visitmexico.com/viajemospormexico/assets/uploads/destinos/jalisco_destinos-principales_guadalajara_int.jpg" id="primera" width="100%" height="365" align="center;"></li>
+      <li><img src="imagenes/gdl.jpg" id="primera" width="100%" height="365" align="center;"></li>
+      <li><img src="imagenes/catedral.jpg" id="primera" width="100%" height="365" align="center;"></li>
+       <li><img src="imagenes/minerba.jpg" id="primera" width="100%" height="365" align="center;"></li>
+    </ul>
+  </div>
+  <div class="texto">
+  	<br><br>
+  <H1>A continuación , algunos de los lugares que te gustaría visitar</H1><br>
+</div>
+
+  <div class="popular">
+  	<div class="card-deck">
+  <div class="card">
+    <img src="imagenes/minerba5.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">La Minerba</h5>
+      <p class="card-text">La Minerva es un monumento representativo de la ciudad de Guadalajara, en el estado de Jalisco, México. La fuente está adornada con una estatua de la diosa romana Minerva, obra del escultor Joaquín Arias.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imagenes/tlaquepaque.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tlaquepaque</h5>
+      <p class="card-text">Tlaquepaque es una de las ciudades mexicanas con mayor tradición artesanal, pero sobre todo un lugar donde los secretos de las técnicas artesanales en cerámica y alfarería se amalgaman en hermosas y novedosas piezas artesanales decorativas dignas de admirarse.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="imagenes/centro.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Centro Historico</h5>
+      <p class="card-text">El Centro de Guadalajara es la parte originaria de dicha ciudad, el cual se compone de edificaciones, monumentos, plazas y parques construidos a lo largo de sus más de cuatro siglos de historia.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+  </div>
+   <div class="texto">
+   	<br><br>
+  <H2>¿que esperas?<br> ¡Ven y visitanos ya!<br>Podemos garantizarle que su estadía en esta ciudad será una experiencia inolvidable<br><br><br> </H2>
+</div>
+
+<div class="footer">
+	
+	<h1>Bienvenidos  a Guadalajara La Capitál de la innovación</h1>
+	<p>Guadalajara es la capital y ciudad más grande del estado de Jalisco.<br>
+	Se encuentra en la región central de Jalisco,<br>
+	en el área del Pacífico occidental de México,<br>
+    dentro de la zona geográfica conocida como Valle de Atemajac.</p>
+    
+</div>
+
+</body>
+</html>
